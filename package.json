@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",
-    "start":"nodemoon"
-
+    "start": "nodemoon"
   },
   "author": "",
   "license": "ISC",
