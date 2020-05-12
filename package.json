@@ -1,7 +1,6 @@
 {
   "name": "animeflv1",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",
@@ -22,5 +21,14 @@
     "nodemon": "^2.0.3",
     "ts-node": "^8.10.1",
     "typescript": "^3.8.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdonayMorales29/ANIMEFLV1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AdonayMorales29/ANIMEFLV1/issues"
+  },
+  "homepage": "https://github.com/AdonayMorales29/ANIMEFLV1#readme",
+  "description": ""
 }
