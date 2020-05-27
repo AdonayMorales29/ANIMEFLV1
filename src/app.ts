@@ -1,6 +1,6 @@
 import express,{Application} from "express";
 
-import {MainController} from "./controllers/main.controller";
+import {Maincontroller} from "./controllers/main.controller";
 import {ClientController} from "./controllers/cliente.controllers";
 import {StaffController} from "./controllers/staff.controllers";
 import {MemberController} from "./controllers/member.controllers";
@@ -19,7 +19,7 @@ config({ path: resolve(__dirname, "../.env") });
 
 class App{
     public app: Application;
-    public mainController: MainController;
+    public mainController: Maincontroller;
     public clientController: ClientController;
     public staffController: StaffController;
     public memberController: MemberController;
@@ -32,7 +32,7 @@ class App{
         this.app = express();
         this.setConfig();
         this.setMongoDBConfig();
-        this.mainController = new MainController(this.app);        
+        this.mainController = new Maincontroller(this.app);        
         this.clientController = new ClientController(this.app);
         this.staffController = new StaffController(this.app);
         this.memberController = new MemberController(this.app);
