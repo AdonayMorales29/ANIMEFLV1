@@ -12,7 +12,7 @@ export class EpisodioController{
         this.app.route("/anime/:id_anime/episodios").get(this.episodio_service.getEpisodio);
         this.app.route("/anime/:id_anime/episodio").post(this.episodio_service.NewEpisodio);
         this.app.route("/anime/:id_anime/episodio/:id_episodio")
-        .get(this.episodio_service.GetEpisodioById)
+        .get(this.episodio_service.getEpisodio)
         .put(this.episodio_service.UpdateEpisodio)
         .delete(this.episodio_service.DeleteEpisodio);
     }

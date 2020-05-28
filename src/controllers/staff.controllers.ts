@@ -1,5 +1,5 @@
 import {Application} from "express";
-import {StaffService} from "../services/staff.services";
+import {StaffService} from "../services/staff.service";
 
 export class StaffController{
     private staff_service: StaffService;
