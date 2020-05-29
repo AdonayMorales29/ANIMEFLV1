@@ -1,15 +1,16 @@
-import {Application} from "express"
-import {MainService} from "../services/main.service"
+import {Application} from "express";
+import {MainService} from "../services/main.services";
 
-//interactua con las rutas que se usaran 
-export class Maincontroller{
-    private MainServices: MainService;
-    constructor(private app:Application){
-        this.MainServices = new MainService();
+
+export class MainController{
+    private mainservices: MainService;
+    constructor(private app: Application){
+        this.mainservices = new MainService();
         this.routes();
     }
 
     public routes(){
-        this.app.get("/",this.MainServices.welcome)
+        this.app.get("/",this.mainservices.welcome)
     }
+
 }
